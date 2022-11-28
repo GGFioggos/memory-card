@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import CardContainer from './CardContainer';
 import Header from './Header';
 
@@ -8,7 +8,7 @@ const Game = () => {
     const [cardsArr, addCard] = useState([]);
 
     const handleScore = () => {
-        setScore((prevScore) => prevScore++);
+        setScore((prevScore) => prevScore + 1);
     };
 
     const handleHighScore = () => {
