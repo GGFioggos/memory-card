@@ -36,3 +36,72 @@
     transform: rotate(360deg);
   }
 }
+
+html {
+  background: rgb(4, 4, 4);
+  background: linear-gradient(
+    0deg,
+    rgba(4, 4, 4, 0.8295693277310925) 18%,
+    rgba(8, 7, 7, 1) 100%
+  );
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stats {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 15px;
+}
+
+.card-container {
+  margin-inline: 20px;
+  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+}
+
+.card {
+  border-radius: 10px;
+  border: none;
+  transition: 0.2s;
+}
+
+.card:hover{
+  transform: translate(0,-5px);
+  transition: 0.2s;
+  box-shadow: rgba(203, 203, 203, 0.193) 0px 4px 12px;
+}
+
+img {
+  border-radius: 15px;
+  height: 180px;
+  width: 180px;
+}
+
+figure {
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+.hint {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+h1 {
+  margin: 10px;
+}
